@@ -10,7 +10,7 @@ const settings = {
 
 // TASK: Build
 gulp.task('build', () => {
-    return gulp.src('scripts/framework/entry.js')
+    return gulp.src('scripts/app.ts')
             .pipe(webpack( require('./webpack.config.js') ))
             .pipe(gulp.dest(settings.scriptDest));
 });
